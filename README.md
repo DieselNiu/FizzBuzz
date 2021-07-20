@@ -1,11 +1,27 @@
-# FizzBuzz练习流程
-## 拿到一个需求，进行tasking
-* 创建一个对象，这个对象对输入的数字进行转换，输出一个字符串Fizz，Buzz，或者Fizzbuzz或者原来数字的字符串表示
-* 创建一个列表，其中包含1到100的整数，依次使用前面的这个对象进行转换，转换的结果是另一个长度为100的列表
-* 打印输出任务2得到的列表
-## 对分解后的两个主要任务写出两个大的测试类。
-* 对这个能够进行数字转换的对象命名为GameNumber
-* 对于整个游戏抽象出来一个对象Game
-## 每次写出的一个测试就想办法写生产代码通过测试，并且识别bad smell进行重构
+# FizzBuzz tasking
+## 创建一个对象GameNumber完成转化逻辑，输出字符串
+    * input 1    output  "1"
+    * input 3    output  "Fizz"
+    * input 5    output  "Buzz"
+    * input 15   output   "FizzBuzz"
+    
+## 创建一个列表对象game，盛放转化前数据和转化后的结果
+
+   * input 100  output  100   game.get(0) = "1"   ....
+   
+## 将转化后的结果打印出来 
+
+常见套路
+1.第一个测试：验证可以创建对象，并验证对象最简单的行为
+eg1： should_create_game_number_from_raw_number
+eg2:  should_create_game_object_with_given_size
+2.对于要处理的问题，我首先创建一个对象，并且验证这个对象包含某些东西
+eg: Game game = new Game(100)   game.size()  ==  100
+
+
+TDD编程原则：
+1.没有失败的测试就不允许修改产品代码
+2.只允许做恰好让测试通过的修改
+3.在保证不改变软件行为的前提下，可以对代码进行重构，消除其中的坏味道
 
 

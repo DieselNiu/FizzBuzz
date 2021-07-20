@@ -7,7 +7,7 @@
     
 ## 创建一个列表对象game，盛放转化前数据和转化后的结果
 
-    *  input 100  output  100   game.get(0) = "1"   ....
+    *  input 100  output  size 100   game.get(0) = "1"   ....
    
 ## 将转化后的结果打印出来 
 

@@ -7,15 +7,19 @@ public class GameNumber {
 
     @Override
     public String toString() {
-        if (rawNumber % 15 == 0) {
+        if (isDividedBy(15)) {
             return "FizzBuzz";
         }
-        if (rawNumber % 3 == 0) {
+        if (isDividedBy(3)) {
             return "Fizz";
         }
-        if (rawNumber % 5 == 0) {
+        if (isDividedBy(5)) {
             return "Buzz";
         }
         return String.valueOf(rawNumber);
+    }
+
+    private boolean isDividedBy(int i) {
+        return rawNumber % i == 0;
     }
 }

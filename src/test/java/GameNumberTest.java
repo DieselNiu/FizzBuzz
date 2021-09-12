@@ -24,5 +24,6 @@ public class GameNumberTest {
     public void should_say_fizz_buzz_when_raw_number_is_15(){
       assertThat(new GameNumber(15).toString()).isEqualTo("FizzBuzz");
     }
+    
 }
 

@@ -17,4 +17,13 @@ public class Game {
     public int size() {
         return gameNumbers.size();
     }
+
+    public List<String> words() {
+        List<String> result = new ArrayList<>();
+        for (GameNumber gameNumber :
+            gameNumbers) {
+            result.add(gameNumber.toString());
+        }
+        return result;
+    }
 }

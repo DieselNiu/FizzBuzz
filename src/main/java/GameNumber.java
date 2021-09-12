@@ -10,6 +10,9 @@ public class GameNumber {
         if (rawNumber % 3 == 0) {
             return "Fizz";
         }
+        if (rawNumber % 5 == 0) {
+            return "Buzz";
+        }
         return String.valueOf(rawNumber);
     }
 }

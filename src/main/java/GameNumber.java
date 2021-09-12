@@ -7,19 +7,19 @@ public class GameNumber {
 
     @Override
     public String toString() {
-        if (isDividedBy(15)) {
+        if (isRelatedTo(15)) {
             return "FizzBuzz";
         }
-        if (isDividedBy(3)) {
+        if (isRelatedTo(3)) {
             return "Fizz";
         }
-        if (isDividedBy(5)) {
+        if (isRelatedTo(5)) {
             return "Buzz";
         }
         return String.valueOf(rawNumber);
     }
 
-    private boolean isDividedBy(int i) {
+    private boolean isRelatedTo(int i) {
         return rawNumber % i == 0 || String.valueOf(rawNumber).contains(String.valueOf(i));
     }
 }

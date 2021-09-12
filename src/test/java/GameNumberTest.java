@@ -20,13 +20,15 @@ public class GameNumberTest {
     public void should_say_buzz_when_raw_number_is_5() {
         assertThat(new GameNumber(5).toString()).isEqualTo("Buzz");
     }
+
     @Test
-    public void should_say_fizz_buzz_when_raw_number_is_15(){
-      assertThat(new GameNumber(15).toString()).isEqualTo("FizzBuzz");
+    public void should_say_fizz_buzz_when_raw_number_is_15() {
+        assertThat(new GameNumber(15).toString()).isEqualTo("FizzBuzz");
     }
+
     @Test
-    public void should_say_fizz_when_raw_number_is_13(){
-      assertThat(new GameNumber(13).toString()).isEqualTo("Fizz");
+    public void should_say_fizz_when_raw_number_is_13() {
+        assertThat(new GameNumber(13).toString()).isEqualTo("Fizz");
     }
 }
 

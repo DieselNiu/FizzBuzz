@@ -19,11 +19,6 @@ public class Game {
     }
 
     public List<String> words() {
-        List<String> result = new ArrayList<>();
-        for (GameNumber gameNumber :
-            gameNumbers) {
-            result.add(gameNumber.toString());
-        }
-        return result;
+        return gameNumbers.stream().map(GameNumber::toString).collect(Collectors.toList());
     }
 }

@@ -20,6 +20,6 @@ public class GameNumber {
     }
 
     private boolean isDividedBy(int i) {
-        return rawNumber % i == 0;
+        return rawNumber % i == 0 || String.valueOf(rawNumber).contains(String.valueOf(i));
     }
 }

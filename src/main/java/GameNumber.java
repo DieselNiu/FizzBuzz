@@ -7,6 +7,9 @@ public class GameNumber {
 
     @Override
     public String toString() {
-      return String.valueOf(rawNumber);
+        if (rawNumber % 3 == 0) {
+            return "Fizz";
+        }
+        return String.valueOf(rawNumber);
     }
 }

@@ -19,7 +19,10 @@ public class GameNumberTest {
     @Test
     public void should_say_buzz_when_raw_number_is_5() {
         assertThat(new GameNumber(5).toString()).isEqualTo("Buzz");
-
+    }
+    @Test
+    public void should_say_fizz_buzz_when_raw_number_is_15(){
+      assertThat(new GameNumber(15).toString()).isEqualTo("FizzBuzz");
     }
 }
 
